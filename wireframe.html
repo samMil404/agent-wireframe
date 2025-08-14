@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Travel Assistant - App Wireframes</title>
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #2dd4bf, #f87171);
+    min-height: 100vh;
+}
+.container {
+    max-width: 1400px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    padding: 4%;
+}
+.header {
+    background: linear-gradient(135deg, #14b8a6, #f43f5e);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.wireframes-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.wireframe {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.phone-mockup {
+    width: clamp(250px, 100%, 350px);
+    border: 8px solid #0f172a;
+    border-radius: 25px;
+    background: white;
+    margin: auto;
+    padding: 10px 4%;
+    max-height: 550px;
+    overflow-y: auto;
+}
+.status-bar {
+    height: 20px;
+    background: linear-gradient(90deg, #0ea5e9, #2563eb);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: white;
+    font-size: 10px;
+}
+.app-header {
+    text-align: center;
+    padding: 10px 0;
+}
+.app-logo {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #14b8a6, #f43f5e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    margin: auto;
+}
+.app-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0f172a;
+}
+.button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.primary-btn {
+    background: linear-gradient(135deg, #14b8a6, #0ea5e9);
+    color: white;
+}
+.secondary-btn {
+    background: #e2e8f0;
+    color: #0f172a;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+}
+.card:hover {
+    background: #f0f9ff;
+}
+@media (min-width: 768px) {
+    .wireframes-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>AI Travel Assistant</h1>
+        <p>Plan your trips with AI-powered suggestions</p>
+    </div>
+    <div class="wireframes-grid">
+        <div class="wireframe">
+            <h3>1. Welcome Screen</h3>
+            <div class="phone-mockup">
+                <div class="status-bar"><span>9:41</span><span>📶 🔋</span></div>
+                <div class="app-header">
+                    <div class="app-logo">✈️</div>
+                    <div class="app-title">AI Travel Assistant</div>
+                </div>
+                <button class="button primary-btn">🌍 Start Planning</button>
+                <button class="button secondary-btn">📅 View Saved Trips</button>
+            </div>
+        </div>
+        <div class="wireframe">
+            <h3>2. Destination Selection</h3>
+            <div class="phone-mockup">
+                <div class="status-bar"><span>9:42</span><span>📶 🔋</span></div>
+                <div class="card">🏝 Beach</div>
+                <div class="card">🏔 Mountains</div>
+                <div class="card">🏙 City</div>
+                <button class="button primary-btn">Next</button>
+            </div>
+        </div>
+        <div class="wireframe">
+            <h3>3. Itinerary Overview</h3>
+            <div class="phone-mockup">
+                <div class="status-bar"><span>9:43</span><span>📶 🔋</span></div>
+                <p>📍 Day 1: Arrival & City Tour</p>
+                <p>📍 Day 2: Museum Visit</p>
+                <p>📍 Day 3: Beach Relaxation</p>
+                <button class="button primary-btn">Confirm Itinerary</button>
+            </div>
+        </div>
+        <div class="wireframe">
+            <h3>4. Hotel Booking</h3>
+            <div class="phone-mockup">
+                <div class="status-bar"><span>9:44</span><span>📶 🔋</span></div>
+                <div class="card">🏨 Ocean View Resort - $120/night</div>
+                <div class="card">🏨 Mountain Lodge - $90/night</div>
+                <button class="button primary-btn">Book Hotel</button>
+            </div>
+        </div>
+        <div class="wireframe">
+            <h3>5. AI Chat</h3>
+            <div class="phone-mockup">
+                <div class="status-bar"><span>9:45</span><span>📶 🔋</span></div>
+                <p><strong>AI:</strong> Where would you like to travel next?</p>
+                <p><strong>You:</strong> Somewhere warm in December</p>
+                <p><strong>AI:</strong> How about Bali? 🌴</p>
+            </div>
+        </div>
+        <div class="wireframe">
+            <h3>6. Success</h3>
+            <div class="phone-mockup">
+                <div class="status-bar"><span>9:46</span><span>📶 🔋</span></div>
+                <h2 style="color:#14b8a6;text-align:center;">✅ Booking Confirmed!</h2>
+                <p style="text-align:center;">Your trip is all set. Safe travels!</p>
+            </div>
+        </div>
+        <div class="wireframe">
+            <h3>7. Error</h3>
+            <div class="phone-mockup">
+                <div class="status-bar"><span>9:47</span><span>📶 🔋</span></div>
+                <h2 style="color:#f43f5e;text-align:center;">⚠️ Payment Failed</h2>
+                <button class="button primary-btn">Retry</button>
+                <button class="button secondary-btn">Contact Support</button>
+            </div>
+        </div>
+        <div class="wireframe">
+            <h3>8. Offline Mode</h3>
+            <div class="phone-mockup">
+                <div class="status-bar"><span>9:48</span><span>📶 🔋</span></div>
+                <h3 style="text-align:center;">📡 Offline Mode Active</h3>
+                <p style="text-align:center;">You can continue planning. Changes will sync later.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
